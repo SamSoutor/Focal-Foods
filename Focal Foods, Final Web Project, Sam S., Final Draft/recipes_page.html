@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var d = 0; d < dropdowns.length; d++) {
+      var openDropdown = dropdowns[d];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $(".description").fadeOut(1000);
+        $(".description2").fadeOut(1000);
+        $(".description3").fadeOut(1000);
+        $(".description4").fadeOut(1000);
+        $(".description5").fadeOut(1000);
+        $(".description6").fadeOut(1000);
+        $(".description7").fadeOut(1000);
+    });
+    $("#show").click(function(){
+        $(".description").fadeIn(1000);
+        $(".description2").fadeIn(1000);
+        $(".description3").fadeIn(1000);
+        $(".description4").fadeIn(1000);
+        $(".description5").fadeIn(1000);
+        $(".description6").fadeIn(1000);
+        $(".description7").fadeIn(1000);
+    });
+});
+</script>
+<style>
+
+@font-face {
+    font-family: 'Space Mono', monospace;
+    src: url("https://fonts.googleapis.com/css?family=Space+Mono");
+}
+
+body {
+	background-color: #FFD584;
+}
+
+#container {
+	background-color: white;
+	height: 1900px;
+	width: 1200px;
+	margin-left: -95px;
+	margin-top: -8px;
+}
+
+#wrapper {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 990px;
+}
+
+#header {
+	text-align: center;
+	border-bottom: 1px solid black;
+	margin-left: 0px;
+	background-color: #8b6523;
+	width: 100%;
+	height: 400px;
+}
+
+#header2 {
+text-align: left;
+font-size: 35px;
+font-family: 'Space Mono', monospace;
+color: black;
+z-index: 5;
+margin-left: 350px;
+margin-top: -1375px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    z-index: 25;
+    font-family: 'Space Mono', monospace;
+}
+
+li {
+    float: left;
+    font-size: 35px;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 25;
+    font-family: 'Space Mono', monospace;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+.description{    
+margin-left: 300px;
+margin-top: -25px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 45px;
+background-color: #fff2cc;
+}
+
+.description2{   
+margin-left: 600px;
+margin-top: 38px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 45px;
+background-color: #fff2cc;
+}
+
+.description3{    
+margin-left: 600px;
+margin-top: 50px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 45px;
+background-color: #fff2cc;
+}
+
+.description4{    
+margin-left: 600px;
+margin-top: 45px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 45px;
+background-color: #fff2cc;
+}
+
+.description5{    
+margin-left: -15px;
+margin-top: -229px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 45px;
+background-color: #fff2cc;
+}
+
+.description6{    
+margin-left: -15px;
+margin-top: -595px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 45px;
+background-color: #fff2cc;
+}
+
+.description7{    
+margin-left: -15px;
+margin-top: -963px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 45px;
+background-color: #fff2cc;
+}
+
+#footer {
+	position: absolute;
+	background-color: #8b6523;
+	color: white;
+	border-top: 1px solid black;
+	margin-left: -95px;
+	margin-right: -161px;
+	margin-top: 1178px;
+	padding-bottom: 20px;
+	padding-left: 15px;
+	font-size: 25px;
+	font-family: 'Space Mono', monospace;
+	float: left;
+	width: 119.7%;
+}
+
+</style>
+</head>
+<body>
+
+<div id="wrapper">
+
+<div id="container">
+
+<div id="header">
+<a href="index.html">
+<img src="Focal_Foods_Logo.jpg" style="position: relative; top: 30px;">
+</a>
+</div>
+
+<ul>
+  <li><a href="about_us_page.html"> &nbsp; About Us</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Departments</a>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="deli_page.html">Deli</a>
+      <a href="grocery_page.html">Grocery</a>
+      <a href="meat_seafood_page.html">Meat/Seafood</a>
+      <a href="produce_page.html">Produce</a>
+	<li><a href="stores_page.html">Stores</a></li>
+	<li><a href="recipes_page.html">Recipes</a></li>
+	<li><a href="wellness_page.html">Wellness</a></li>
+	<li><a href="news_page.html">News</a></li>
+    </div>
+  </li>
+</ul>
+
+<button id="hide" style="position: absolute; top: 525px; left: -15px; font-size: 25px;">Hide</button>
+<button id="show" style="position: absolute; top: 525px; left: 75px; font-size: 25px;">Show</button>
+
+<div id="header2">
+<h1>Recipes</h1>
+</div>
+
+<div class="description">
+Recipe for Chicken Soup:
+You need chicken, carrots, celery and onion in order to make this recipe.
+</div>
+
+<div class="description2">
+Recipe for Chili:
+You need ground beef or turkey, onion, tomatoes, green chiles, beans and chili powder in
+order to make this recipe.
+</div>
+
+<div class="description3">
+Recipe for Macaroni Salad:
+You need uncooked elbow macaroni, mayonnaise, distilled white vinegar, white sugar,
+prepared yellow mustard, salt, ground black pepper, onion, celery, green bell pepper, grated
+carrot and pimento peppers in order to make this recipe.
+</div>
+
+<div class="description4">
+Recipe for Girf Sandwich:
+You need turkey breast, ham, provolone cheese, tomato, lettuce and mayonnaise in order to
+make this recipe.
+</div>
+
+<div class="description5">
+Recipe for Deep-Fried Lobster:
+You need a deep-fryer and a cooked lobster in order to make this recipe.
+</div>
+
+<div class="description6">
+Recipe for Strawberry Milkshake:
+You need strawberries, vanilla, ice cream and milk in order to make this recipe.
+</div>
+
+<div class="description7">
+Recipe for Squid Salad:
+You need lemon juice, garlic, parsley, salt, pepper, squid, olives and celery in order to
+make this recipe.
+</div>
+
+<div id="footer">
+<p>&copy;2016 FOCAL FOODS</p>
+<img src="Facebook_Logo.png" width=212px height=212px style="position: absolute; top: -55px; left: 825px;">
+<img src="Instagram_Logo.png" width=152px height=152px style="position: absolute; top: -25px; left: 925px;">
+<img src="Pinterest_Logo.png" width=152px height=152px style="position: absolute; top: -25px; left: 990px;">
+<img src="Twitter_Bird.png" width=112px height=112px style="position: absolute; top: -5px; left: 1080px;">
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

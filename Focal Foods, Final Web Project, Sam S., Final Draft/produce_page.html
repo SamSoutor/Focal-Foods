@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var d = 0; d < dropdowns.length; d++) {
+      var openDropdown = dropdowns[d];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+$(document).ready(function(){
+    $("button").click(function(){
+        $(".description").fadeIn(1000);
+        $(".description2").fadeIn(1000);
+        $(".description3").fadeIn(1000);
+        $(".description4").fadeIn(1000);
+        $(".description5").fadeIn(1000);
+        $(".description6").fadeIn(1000);
+        $(".description7").fadeIn(1000);
+        $(".description8").fadeIn(1000);
+        $(".description9").fadeIn(1000);
+    });
+});
+</script>
+<style>
+
+@font-face {
+    font-family: 'Space Mono', monospace;
+    src: url("https://fonts.googleapis.com/css?family=Space+Mono");
+}
+
+body {
+	background-color: #FFD584;
+}
+
+#container {
+	background-color: white;
+	height: 3400px;
+	width: 1200px;
+	margin-left: -95px;
+	margin-top: -8px;
+}
+
+#wrapper {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 990px;
+}
+
+#header {
+	text-align: center;
+	border-bottom: 1px solid black;
+	margin-left: 0px;
+	background-color: #8b6523;
+	width: 100%;
+	height: 400px;
+}
+
+#header2 {
+text-align: left;
+font-size: 35px;
+font-family: 'Space Mono', monospace;
+color: black;
+z-index: 5;
+margin-left: 105px;
+margin-top: -2875px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    z-index: 25;
+    font-family: 'Space Mono', monospace;
+}
+
+li {
+    float: left;
+    font-size: 35px;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 25;
+    font-family: 'Space Mono', monospace;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+.description{
+display: none;    
+margin-left: -95px;
+margin-top: 285px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 30px;
+background-color: #fff2cc;
+}
+
+.description2{
+display: none;   
+margin-left: 10px;
+margin-top: 285px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 30px;
+background-color: #fff2cc;
+}
+
+.description3{
+display: none;    
+margin-left: 711px;
+margin-top: -514px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 30px;
+background-color: #fff2cc;
+}
+
+.description4{
+display: none;    
+margin-left: -95px;
+margin-top: 335px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 30px;
+background-color: #fff2cc;
+}
+
+.description5{
+display: none;   
+margin-left: 10px;
+margin-top: 335px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 30px;
+background-color: #fff2cc;
+}
+
+.description6{
+display: none;   
+margin-left: 711px;
+margin-top: -484px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 30px;
+background-color: #fff2cc;
+}
+
+.description7{
+display: none;   
+margin-left: -95px;
+margin-top: 405px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 30px;
+background-color: #fff2cc;
+}
+
+.description8{
+display: none;   
+margin-left: 10px;
+margin-top: 405px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 30px;
+background-color: #fff2cc;
+}
+
+.description9{
+display: none;    
+margin-left: 711px;
+margin-top: -454px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 30px;
+background-color: #fff2cc;
+}
+
+#footer {
+	position: absolute;
+	background-color: #8b6523;
+	color: white;
+	border-top: 1px solid black;
+	margin-left: -95px;
+	margin-right: -161px;
+	margin-top: 2617px;
+	padding-bottom: 20px;
+	padding-left: 15px;
+	font-size: 25px;
+	font-family: 'Space Mono', monospace;
+	float: left;
+	width: 119.7%;
+}
+
+</style>
+</head>
+<body>
+
+<div id="wrapper">
+
+<div id="container">
+
+<div id="header">
+<a href="index.html">
+<img src="Focal_Foods_Logo.jpg" style="position: relative; top: 30px;">
+</a>
+</div>
+
+<ul>
+  <li><a href="about_us_page.html"> &nbsp; About Us</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Departments</a>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="deli_page.html">Deli</a>
+      <a href="grocery_page.html">Grocery</a>
+      <a href="meat_seafood_page.html">Meat/Seafood</a>
+      <a href="produce_page.html">Produce</a>
+	<li><a href="stores_page.html">Stores</a></li>
+	<li><a href="recipes_page.html">Recipes</a></li>
+	<li><a href="wellness_page.html">Wellness</a></li>
+	<li><a href="news_page.html">News</a></li>
+    </div>
+  </li>
+</ul>
+
+<button style="position: absolute; top: 505px; left: 875px; font-size: 25px;">Click to fade in descriptions</button>
+
+<div id="header2">
+<h1>Departments: Produce</h1>
+</div>
+
+<img src="Apple.png" style="position: absolute; top: 735px; left: -55px;">
+<div class="description">
+The first fruit that Focal Foods sold to customers in 1967 was none other than apples. As
+fresh as they are healthy, apples are extremely beneficial for anyone who is a health nut.
+Apples are rich in important antioxidants, flavanoids and dietary fiber. Apples have been
+proven to reduce the risk of cancer, hypertension, diabetes and heart disease. One last
+thing, you must remember to wash apples before you eat them. A bag of apples costs $1.99 alone.
+</div>
+
+<img src="Orange.png" style="position: absolute; left: 255px; top: 690px;">
+<div class="description2">
+Interesting fact that you should know, Focal Foods orders their oranges straight out of
+Florida. As the second most popular fruit sold at Focal Foods, many people have said that
+they can't stop buying them. A bag of oranges costs $1.99 alone. You can also use the oranges
+to create juice out of them. For all of the health nuts out there, oranges are rich in
+vitamin C, dietary fiber, vitamin A, calcium, copper and potassium.
+</div>
+
+<img src="Carrot.png" style="position: absolute; left: 750px; top: 640px;">
+<div class="description3">
+Freshly grown for a healthy diet, the carrots at Focal Foods cost $0.99 each. As many of
+you are already aware, carrots improve your eyesight. However, there is much more to it
+than that. Carrots contain vitamin A, vitamin C, vitamin K, vitamin B8, folate, potassium,
+iron, copper and manganese. If you own a pet rabbit, bring some carrots home for it. I'm
+sure that you'll enjoy seeing it happy.
+</div>
+
+<img src="Tomato.png" style="position: absolute; top: 1175px; left: -735px;">
+<div class="description4">
+One of two things sold at Focal Foods for the purpose of sandwich making, tomatoes are
+a favorite among our customers. A bag of tomatoes costs $2.99 alone. For those who are not
+aware, tomatoes contain vitamin C, biotin, molybdenum, vitamin K, copper, potassium,
+manganese, dietary fiber, vitamin A, vitamin B6, folate, niacin, vitamin E and phosphorus.
+Since we have the best sub-sandwiches, we'll give you free tomatoes as a side dish.
+</div>
+
+<img src="Lettuce.png" style="position: absolute; top: 1175px; left: -55px;">
+<div class="description5">
+The second of two things sold at Focal Foods for the purpose of sandwich making, lettuce
+is the most green that you will ever eat. A lettuce bag costs $1.99 alone. The lettuce sold
+at Focal Foods is also the most fresh vegetable that you'll ever find. Lettuce contains
+protein, carbohydrates, dietary fiber, calcium, iron, magnesium, phosphorous, potassium,
+zinc, folate and vitamins B6,C,A,E and K.
+</div>
+
+<img src="Blueberry.png" style="position: absolute; top: 1215px; left: 425px;">
+<div class="description6">
+As the third most popular fruit sold at Focal Foods, blueberries have some of the best
+benefits among the other fruits that are sold. Blueberries have been proven to lower
+cholesterol and the risk of heart disease. A bag of blueberries costs $0.25 alone. For
+those who are interested, blueberries have the benefits of fiber, potassium, folate,
+vitamin C and vitamin B6. Trust us, you'll love them.
+</div>
+
+<img src="Strawberry.png" style="position: absolute; top: 1675px; left: -1335px;">
+<div class="description7">
+As the most popular fruit sold at Focal Foods, strawberries have pleased people of all ages
+since we first opened in 1967. A bag of strawberries costs $0.50 alone. Since this fruit
+has many benefits for the overall health of the average human being, it is important for
+you to know what those benefits are. The benefits of a strawberry include folate, potassium,
+manganese, dietary fiber and magnesium.
+</div>
+
+<img src="Potato.png" style="position: absolute; top: 2170px; left: -115px;">
+<div class="description8">
+Here's a little thing you should know about potatoes. You boil them, mash them and stick
+them in a stew. The potatoes here at Focal Foods have been ranked as the best produce and
+they only cost $0.75 each. For a long time, potatoes have been considered to be the most
+important food source on Earth. The benefits of potatoes include potassium, vitamin C,
+manganese, phosphorus, niacin and dietary fiber.
+</div>
+
+<img src="Onion.png" style="position: absolute; top: 1825px; left: -175px;">
+<div class="description9">
+I'm sure that many of you already know that onions can make you cry if you sniff them. To
+be fair, yes they can do that. However, onions are also very good for your overall health.
+Here at Focal Foods, onions cost $0.99 each. The benefits of onions include vitamin C and
+chromium. Onions have also been proven to reduce inflammation and heal infections. Make
+sure to pick up as many as you like.
+</div>
+
+<div id="footer">
+<p>&copy;2016 FOCAL FOODS</p>
+<img src="Facebook_Logo.png" width=212px height=212px style="position: absolute; top: -55px; left: 825px;">
+<img src="Instagram_Logo.png" width=152px height=152px style="position: absolute; top: -25px; left: 925px;">
+<img src="Pinterest_Logo.png" width=152px height=152px style="position: absolute; top: -25px; left: 990px;">
+<img src="Twitter_Bird.png" width=112px height=112px style="position: absolute; top: -5px; left: 1080px;">
+</div>
+
+
+</div>
+
+</div>
+
+</body>
+</html>

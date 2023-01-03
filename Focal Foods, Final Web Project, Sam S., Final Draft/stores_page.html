@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+<script>
+
+/* When the user clicks on the button, 
+toggle between hiding and 
+showing the dropdown content */
+
+function myFunction() {
+document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+if (!e.target.matches('.dropbtn')) {
+var dropdowns = document.getElementsByClassName("dropdown-content");
+for (var d = 0; d < dropdowns.length; d++) {
+var openDropdown = dropdowns[d];
+if (openDropdown.classList.contains('show')) {
+openDropdown.classList.remove('show');
+}
+} 
+}
+}
+</script>
+<style>
+
+@font-face {
+    font-family: 'Space Mono', monospace;
+    src: url("https://fonts.googleapis.com/css?family=Space+Mono");
+}
+
+body {	
+background-color: #FFD584;
+}
+
+#container {	
+background-color: white;
+height: 1900px;
+width: 1200px;
+margin-left: -95px;
+margin-top: -8px;
+}
+
+#wrapper {	
+position: relative;
+margin-left: auto;
+margin-right: auto;
+width: 990px;
+}
+
+#header {	
+text-align: center;
+border-bottom: 1px solid black;
+margin-left: 0px;
+background-color: #8b6523;
+width: 100%;
+height: 400px;
+}
+
+#header2 {
+text-align: left;
+font-size: 35px;
+font-family: 'Space Mono', monospace;
+color: black;
+z-index: 5;
+margin-left: 375px;
+margin-top: -1375px;
+}	
+
+ul {    
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #333;
+z-index: 25;
+font-family: 'Space Mono', monospace;
+}
+    
+li {
+float: left;
+font-size: 35px;
+}
+
+li a, .dropbtn {    
+display: inline-block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {    
+background-color: red;
+}
+
+li.dropdown {    
+display: inline-block;
+}
+
+.dropdown-content {    
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 25;
+font-family: 'Space Mono', monospace;
+}
+
+.dropdown-content a {    
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.dropdown-content a:hover {
+background-color: #f1f1f1
+}
+
+.show {
+display:block;
+}
+
+.description {
+margin-left: -10px;
+margin-top: 250px;
+padding-left: 5px;
+padding-right: 5px;
+border: 4px solid yellow;
+height: auto;
+width: 410px;
+float: left;
+text-align: center;
+font-size: 25px;
+font-family: 'Space Mono', monospace;
+line-height: 45px;
+background-color: #fff2cc;;
+}
+
+.description2 {
+margin-left: 142px;
+margin-top: 250px;
+padding-left: 5px;
+padding-right: 5px;
+border: 4px solid yellow;
+height: auto;
+width: 410px;
+float: left;
+text-align: center;
+font-size: 25px;
+font-family: 'Space Mono', monospace;
+line-height: 45px;
+background-color: #fff2cc;;
+}
+
+.description3 {
+margin-left: -1000px;
+margin-top: 800px;
+padding-left: 5px;
+padding-right: 5px;
+border: 4px solid yellow;
+height: auto;
+width: 410px;
+float: left;
+text-align: center;
+font-size: 25px;
+font-family: 'Space Mono', monospace;
+line-height: 45px;
+background-color: #fff2cc;;
+}
+
+.description4 {
+margin-left: 142px;
+margin-top: 320px;
+padding-left: 5px;
+padding-right: 5px;
+border: 4px solid yellow;
+height: auto;
+width: 410px;
+float: left;
+text-align: center;
+font-size: 25px;
+font-family: 'Space Mono', monospace;
+line-height: 45px;
+background-color: #fff2cc;;
+}
+
+#footer {
+	background-color: #8b6523;
+	color: white;
+	border-top: 1px solid black;
+	margin-left: -95px;
+	margin-right: -161px;
+	margin-top: 97px;
+	padding-bottom: 20px;
+	padding-left: 15px;
+	font-size: 25px;
+	font-family: 'Space Mono', monospace;
+	float: left;
+	width: 119.7%;
+}
+
+</style>
+</head>
+<body>
+
+<div id="wrapper">
+<div id="container">
+<div id="header">
+<a href="index.html">
+<img src="Focal_Foods_Logo.jpg" style="position: relative; top: 30px;">
+</a>
+
+</div>
+
+<ul>  
+<li>
+<a href="about_us_page.html"> &nbsp; About Us</a></li>
+<li class="dropdown">
+<a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Departments</a>
+<div class="dropdown-content" id="myDropdown">
+<a href="deli_page.html">Deli</a>
+<a href="grocery_page.html">Grocery</a>
+<a href="meat_seafood_page.html">Meat/Seafood</a>
+<a href="produce_page.html">Produce</a>
+<li><a href="stores_page.html">Stores</a></li>
+<li><a href="recipes_page.html">Recipes</a></li>
+<li><a href="wellness_page.html">Wellness</a></li>
+<li><a href="news_page.html">News</a></li>
+</div>
+</li>
+</ul>
+
+<div id="header2">
+<h1>Stores</h1>
+</div>
+
+<img src="Focal_Foods_Logo.jpg" width=580px height=195px style="position: absolute; top: 725px; left: -85px;">
+<div class="description">
+Eden Prairie Location Details: <br> 1986 Rolfe Pkwy <br> Eden Prairie, MN 55344 <br> Phone: (789) 342-1945 <br> Fax: 789-021-1921
+</div>
+
+<img src="Focal_Foods_Logo.jpg" width=580px height=195px style="position: absolute; top: 725px; left: 520px;">
+<div class="description2">
+Mankato Location Details: <br> 1993 Walker Pkwy <br> Mankato, MN 55450 <br> Phone: (865) 123-1910 <br> Fax: 865-654-1905
+</div>
+
+<img src="Focal_Foods_Logo.jpg" width=580px height=195px style="position: absolute; top: 1275px; left: -85px;">
+<div class="description3">
+Minneapolis Location Details: <br> 1975 Canvas Pkwy <br> Minneapolis, MN 55275 <br> Phone: (952) 756-1970 <br> Fax: 952-756-1965
+</div>
+
+<img src="Focal_Foods_Logo.jpg" width=580px height=195px style="position: absolute; top: 1275px; left: 520px;">
+<div class="description4">
+Saint Paul Location Details: <br> 2005 Elm Pkwy <br> Saint Paul, MN 55125 <br> Phone (651) 245-1996 <br> Fax: 651-360-2015
+</div>
+
+<div id="footer">
+<p>&copy;2016 FOCAL FOODS</p>
+<img src="Facebook_Logo.png" width=212px height=212px style="position: absolute; top: 1845px; left: 725px;">
+<img src="Instagram_Logo.png" width=152px height=152px style="position: absolute; top: 1875px; left: 825px;">
+<img src="Pinterest_Logo.png" width=152px height=152px style="position: absolute; top: 1875px; left: 890px;">
+<img src="Twitter_Bird.png" width=112px height=112px style="position: absolute; top: 1895px; left: 980px;">
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

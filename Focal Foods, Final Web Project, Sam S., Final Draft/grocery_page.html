@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var d = 0; d < dropdowns.length; d++) {
+      var openDropdown = dropdowns[d];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+$(document).ready(function(){
+    $("button").click(function(){
+        $(".description").fadeIn(1000);
+        $(".description2").fadeIn(1000);
+        $(".description3").fadeIn(1000);
+        $(".description4").fadeIn(1000);
+        $(".description5").fadeIn(1000);
+        $(".description6").fadeIn(1000);
+        $(".description7").fadeIn(1000);
+        $(".description8").fadeIn(1000);
+        $(".description9").fadeIn(1000);
+    });
+});
+</script>
+<style>
+
+@font-face {
+    font-family: 'Space Mono', monospace;
+    src: url("https://fonts.googleapis.com/css?family=Space+Mono");
+}
+
+body {
+	background-color: #FFD584;
+}
+
+#container {
+	background-color: white;
+	height: 3400px;
+	width: 1200px;
+	margin-left: -95px;
+	margin-top: -8px;
+}
+
+#wrapper {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 990px;
+}
+
+#header {
+	text-align: center;
+	border-bottom: 1px solid black;
+	margin-left: 0px;
+	background-color: #8b6523;
+	width: 100%;
+	height: 400px;
+}
+
+#header2 {
+text-align: left;
+font-size: 35px;
+font-family: 'Space Mono', monospace;
+color: black;
+z-index: 5;
+margin-left: 105px;
+margin-top: -2875px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    z-index: 25;
+    font-family: 'Space Mono', monospace;
+}
+
+li {
+    float: left;
+    font-size: 35px;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 25;
+    font-family: 'Space Mono', monospace;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+.description{
+display: none;    
+margin-left: -95px;
+margin-top: 285px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 30px;
+background-color: #fff2cc;
+}
+
+.description2{
+display: none;   
+margin-left: 10px;
+margin-top: 285px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 30px;
+background-color: #fff2cc;
+}
+
+.description3{
+display: none;    
+margin-left: 711px;
+margin-top: -454px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 30px;
+background-color: #fff2cc;
+}
+
+.description4{
+display: none;    
+margin-left: -95px;
+margin-top: 365px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 30px;
+background-color: #fff2cc;
+}
+
+.description5{
+display: none;   
+margin-left: 10px;
+margin-top: 365px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 30px;
+background-color: #fff2cc;
+}
+
+.description6{
+display: none;   
+margin-left: 711px;
+margin-top: -424px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 30px;
+background-color: #fff2cc;
+}
+
+.description7{
+display: none;   
+margin-left: -95px;
+margin-top: 375px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 30px;
+background-color: #fff2cc;
+}
+
+.description8{
+display: none;    
+margin-left: 10px;
+margin-top: 375px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 30px;
+background-color: #fff2cc;
+}
+
+.description9{
+display: none;   
+margin-left: 711px;
+margin-top: -454px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 30px;
+background-color: #fff2cc;
+}
+
+#footer {
+	position: absolute;
+	background-color: #8b6523;
+	color: white;
+	border-top: 1px solid black;
+	margin-left: -95px;
+	margin-right: -161px;
+	margin-top: 2617px;
+	padding-bottom: 20px;
+	padding-left: 15px;
+	font-size: 25px;
+	font-family: 'Space Mono', monospace;
+	float: left;
+	width: 119.7%;
+}
+
+</style>
+</head>
+<body>
+
+<div id="wrapper">
+
+<div id="container">
+
+<div id="header">
+<a href="index.html">
+<img src="Focal_Foods_Logo.jpg" style="position: relative; top: 30px;">
+</a>
+</div>
+
+<ul>
+  <li><a href="about_us_page.html"> &nbsp; About Us</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Departments</a>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="deli_page.html">Deli</a>
+      <a href="grocery_page.html">Grocery</a>
+      <a href="meat_seafood_page.html">Meat/Seafood</a>
+      <a href="produce_page.html">Produce</a>
+	<li><a href="stores_page.html">Stores</a></li>
+	<li><a href="recipes_page.html">Recipes</a></li>
+	<li><a href="wellness_page.html">Wellness</a></li>
+	<li><a href="news_page.html">News</a></li>
+    </div>
+  </li>
+</ul>
+
+<button style="position: absolute; top: 505px; left: 875px; font-size: 25px;">Click to fade in descriptions</button>
+
+<div id="header2">
+<h1>Departments: Grocery</h1>
+</div>
+
+<img src="Milk.png" style="position:absolute; top: 700px; left: -175px;">
+<div class="description">
+As the biggest source of calcium here at Focal Foods, it is nearly impossible to live
+without milk. Focal Foods sells various brands of milk for customers and all have proven
+to be a success. Without a doubt, we can safely say that chocolate milk is the most popular
+type we have to sell. Since this product is heavily in demand from many people, you might
+want to get as much as you can.
+</div>
+
+<img src="Cracker.png" style="position: absolute; top: 650px; left: 325px;">
+<div class="description2">
+A good snack for all the people who need a side dish in their lunch, the crackers here at
+Focal Foods have been considered to be a great buy. We sell various types and most of them
+have been popular with our customers. Crackers have the benefits of protein, calcium and
+dietary fiber. Make sure that the crackers don't have too much salt, you don't want to
+increase sodium intake. If you like, have crackers with some cheese.
+</div>
+
+<img src="Bread.png" width=489px height=389px style="position: absolute; top: 700px; left: 675px;">
+<div class="description3">
+Let's just say that you can't live without the benefits that come with different types of
+bread. The biggest benefits that come from bread include a lower risk of weight gain and
+heart disease. We normally sell packs of bread for $4.99 each. Various brands are sold
+and they all have proven to be a success with the customers. If you are looking for a
+specific type, feel free to stop by.
+</div>
+
+<img src="Spaghetti_Noodles.png" width=1720px height=880px style="position: absolute; top: 1205px; left: -735px;">
+<div class="description4">
+Who doesn't want spaghetti noodles on their grocery list? This food is ranked as Focal
+Foods most popular grocery and the reason for that is because spaghetti is favorite for
+many Americans. The benefits of spaghetti noodles match with what is applied to them such
+as sauce or vegetables. Packs of noodles are sold for $1.99 each. Might want to pick them
+up while you can, they sell out quickly.
+</div>
+
+<img src="Jelly.png" style="position: absolute; top: 1140px; left: -25px;">
+<div class="description5">
+Good for crackers and sandwiches, jelly brings happiness to those who enjoy it with a
+passion. Its benefits can help with your overall health and the nutrition facts make this
+very clear when you pick up jars of them here at Focal Foods. A jar of jelly sells for
+$2.99 each. Focal Foods also sells different types of jelly including but not limited to,
+strawberry flavor.
+</div>
+
+<img src="Chicken_Soup.png" width=1800px height=800px style="position: absolute; top: 1245px; left: -45px;">
+<div class="description6">
+Focal Foods sells tomato and cream of mushroom soups, but the one soup the outranks them
+all is none other than chicken soup. Warm for the average person and beneficial for their
+overall health. If you ever have a cold or some other kind of virus, chicken soup can help
+to ease it. Cans of chicken soup sell for $0.99 each. While this soup is known to sell out
+in the winter, make sure to have some during the other seasons.
+</div>
+
+<img src="Cereal.png" style="position: absolute; top: 1525px; left: -1255px;">
+<div class="description7">
+Focal Foods sells various cereals for $4.99 each and all of the types that are sold here
+have proven to be very successful. Rich in fiber, cereal is a very important aspect of
+breakfast and this is something that needs to be stated in order to avoid the risk of
+cancer and high blood pressure. Come see our catalog of what we have to offer and we can
+assure you that there is something waiting for you.
+</div>
+
+<img src="Tomato_Sauce.png" style="position: absolute; top: 1570px; left: -115px;">
+<div class="description8">
+This goes great with the spaghetti noodles that are sold here at Focal Foods and many other
+things as well. Tomato sauce has the benefits of cutting cholesterol, improving eyesight
+and reducing any risk of cancer. A jar of tomato sauce costs $7.99 each and like the
+spaghetti noodles, tomato sauce is another favorite among many Americans. Feel free to
+pick it up because it might run out quickly.
+</div>
+
+<img src="Peanut_Butter.png" style="position: absolute; top: 975px; left: -165px;">
+<div class="description9">
+Jelly has a companion and that companion is none other then peanut butter. Focal Foods
+understands that some are allergic to it and we have signs to warn people of this. Despite
+that, peanut butter contains protein, potassium, fiber, magnesium and vitamin E. All of
+these serve great benefits for your health. Oh yeah, you might want to buy some for a dog.
+Dogs are known to love peanut butter as well.
+</div>
+
+<div id="footer">
+<p>&copy;2016 FOCAL FOODS</p>
+<img src="Facebook_Logo.png" width=212px height=212px style="position: absolute; top: -55px; left: 825px;">
+<img src="Instagram_Logo.png" width=152px height=152px style="position: absolute; top: -25px; left: 925px;">
+<img src="Pinterest_Logo.png" width=152px height=152px style="position: absolute; top: -25px; left: 990px;">
+<img src="Twitter_Bird.png" width=112px height=112px style="position: absolute; top: -5px; left: 1080px;">
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

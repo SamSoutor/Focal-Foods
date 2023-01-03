@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var d = 0; d < dropdowns.length; d++) {
+      var openDropdown = dropdowns[d];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+$(document).ready(function(){
+    $("button").click(function(){
+        $(".description").fadeIn(1000);
+        $(".description2").fadeIn(1000);
+        $(".description3").fadeIn(1000);
+        $(".description4").fadeIn(1000);
+        $(".description5").fadeIn(1000);
+        $(".description6").fadeIn(1000);
+        $(".description7").fadeIn(1000);
+        $(".description8").fadeIn(1000);
+        $(".description9").fadeIn(1000);
+    });
+});
+</script>
+<style>
+
+@font-face {
+    font-family: 'Space Mono', monospace;
+    src: url("https://fonts.googleapis.com/css?family=Space+Mono");
+}
+
+body {
+	background-color: #FFD584;
+}
+
+#container {
+	background-color: white;
+	height: 3400px;
+	width: 1200px;
+	margin-left: -95px;
+	margin-top: -8px;
+}
+
+#wrapper {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 990px;
+}
+
+#header {
+	text-align: center;
+	border-bottom: 1px solid black;
+	margin-left: 0px;
+	background-color: #8b6523;
+	width: 100%;
+	height: 400px;
+}
+
+#header2 {
+text-align: left;
+font-size: 35px;
+font-family: 'Space Mono', monospace;
+color: black;
+z-index: 5;
+margin-left: 250px;
+margin-top: -2875px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    z-index: 25;
+    font-family: 'Space Mono', monospace;
+}
+
+li {
+    float: left;
+    font-size: 35px;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 25;
+    font-family: 'Space Mono', monospace;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+.description{
+display: none;    
+margin-left: -95px;
+margin-top: 245px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 30px;
+background-color: #fff2cc;
+}
+
+.description2{
+display: none;   
+margin-left: 10px;
+margin-top: 245px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 30px;
+background-color: #fff2cc;
+}
+
+.description3{
+display: none;    
+margin-left: 711px;
+margin-top: -424px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 30px;
+background-color: #fff2cc;
+}
+
+.description4{
+display: none;   
+margin-left: -95px;
+margin-top: 300px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 30px;
+background-color: #fff2cc;
+}
+
+.description5{
+display: none;    
+margin-left: 10px;
+margin-top: 300px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 30px;
+background-color: #fff2cc;
+}
+
+.description6{
+display: none;    
+margin-left: 711px;
+margin-top: -394px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 30px;
+background-color: #fff2cc;
+}
+
+.description7{
+display: none;    
+margin-left: -95px;
+margin-top: 375px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 30px;
+background-color: #fff2cc;
+}
+
+.description8{
+display: none;    
+margin-left: 10px;
+margin-top: 375px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 30px;
+background-color: #fff2cc;
+}
+
+.description9{
+display: none;    
+margin-left: 711px;
+margin-top: -424px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 30px;
+background-color: #fff2cc;
+}
+
+#footer {
+	position: absolute;
+	background-color: #8b6523;
+	color: white;
+	border-top: 1px solid black;
+	margin-left: -95px;
+	margin-right: -161px;
+	margin-top: 2575px;
+	padding-bottom: 20px;
+	padding-left: 15px;
+	font-size: 25px;
+	font-family: 'Space Mono', monospace;
+	float: left;
+	width: 119.7%;
+}
+
+</style>
+</head>
+<body>
+
+<div id="wrapper">
+
+<div id="container">
+
+<div id="header">
+<a href="index.html">
+<img src="Focal_Foods_Logo.jpg" style="position: relative; top: 30px;">
+</a>
+</div>
+
+<ul>
+  <li><a href="about_us_page.html"> &nbsp; About Us</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Departments</a>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="deli_page.html">Deli</a>
+      <a href="grocery_page.html">Grocery</a>
+      <a href="meat_seafood_page.html">Meat/Seafood</a>
+      <a href="produce_page.html">Produce</a>
+	<li><a href="stores_page.html">Stores</a></li>
+	<li><a href="recipes_page.html">Recipes</a></li>
+	<li><a href="wellness_page.html">Wellness</a></li>
+	<li><a href="news_page.html">News</a></li>
+    </div>
+  </li>
+</ul>
+
+<button style="position: absolute; top: 525px; left: 875px; font-size: 25px;">Click to fade in descriptions</button>
+
+<div id="header2">
+<h1>Departments: Meat/Seafood</h1>
+</div>
+
+<img src="Crab_Leg.png" width=774px height=348px style="position: absolute; left: -275px; top: 775px;">
+<div class="description">
+Fresh crab legs are sure to bring in customers who enjoy a deadly catch. Though short in
+supply due to popular demand, the taste of crab legs is quite a delicacy. For those who
+are not aware, crab legs are rich in omega-3 fatty acids, protein, vitamins and minerals.
+The price for crab legs here at Focal Foods is $5.99 per pound. Get them while you can, you
+never know if we might run out.
+</div>
+
+<img src="Lobster.png" width=1000px height=475px style="position: absolute; top: 705px; left: 5px;">
+<div class="description2">
+Oh yes, we have lobsters fresh from the tank here at Focal Foods. Though you may have to
+eat them in moderation, they are sure to bring luxury to the dinner table. Lobsters contain
+vitamins and minerals which are very important to healthy eating. The price for lobster
+cooked is $14.99 while the price for one fresh from the tank is $24.99. Feel free to try
+one deep-fried at our deep-fry event.
+</div>
+
+<img src="Octopus.png" width=824px height=568px style="position: absolute; top: 645px; left: 500px;">
+<div class="description3">
+The main attraction of Focal Foods is none other than the octopus. There are many health
+benefits that come from this creature. This seafood is low in calories and has high grams
+of protein and is also low in fat. It also has key nutrients that include vitamin B-12.
+A whole octopus costs $24.99 while tentacles cost $9.99 each. Don't choke on the suction
+cups please!
+</div>
+
+<img src="Salmon.png" width=1248px height=363px style="position: absolute; top: 1435px; left: -475px;">
+<div class="description4">
+Every salmon here at Focal Foods is considered a big catch. These fish are rich in vitamin
+B-12, vitamin D, selenium, niacin, omega-3 fatty acids, protein, phosphorus, vitamin B6,
+choline, pantothenic acid, biotin and potassium. A slice of salmon meat costs $4.99 per
+pound while a whole fish costs $19.99. Careful, some fish might be heavy!
+</div>
+
+<img src="Sausages.png" width=2200px height=1913px style="position: absolute; top: 700px; left: -575px;">
+<div class="description5">
+If there is anything that most people enjoy, it's a good sausage. Sausages contain protein,
+vitamin B-12 and potassium. Focal Foods enjoys making these off a grill and the best way
+to cook a sausage is with propane. A pack of sausages costs $3.99. We also sell different
+types of sausages in case you need some variety within your freezer/fridge.
+</div>
+
+<img src="Shrimp.png" width=1176px height=581px style="position: absolute; top: 1335px; left: 300px;">
+<div class="description6">
+Shrimp is very popular here at Focal Foods. To put this in perspective, shrimp sells out
+faster than crab legs. Shrimp has a good amount of protein, but it also has niacin and
+selenium. Keep in mind though, shrimp is high in cholesterol. A single shrimp costs $2.99
+while a pack of shrimp costs $7.99. Trust me, the family will enjoy every shrimp that they
+get their hands on.
+</div>
+
+<img src="Steak.png" width=1720px height=1240px style="position: absolute; top: 1775px; left: -745px;">
+<div class="description7">
+If there's anything that propane is good for, then it's making a good steak. Steak benefits
+include protein, iron, zinc and B vitamins. We here at Focal Foods have a signature steak
+called "The Texas Ranger." Above this description is a picture of that particular steak.
+At Focal Foods, steak costs $4.99 per pound. Remember this, medium rare steak is the best
+of the best.
+</div>
+
+<img src="Bacon.png" width=1100px height=725px style="position: absolute; top: 2025px; left: -25px;">
+<div class="description8">
+For those who are not aware, bacon does not cause heart disease. In fact, bacon has its
+benefits. Don't believe us? What if I told you that bacon contains omega-3 acids that help
+reduce cholesterol and improves the heart's overall health. Bacon packs cost $1.99 each
+here at Focal Foods. If you enjoy bacon as breakfest, then you will enjoy buying loads of
+them to last you weeks!
+</div>
+
+<img src="Pork_Chops.png" width=4596px height=3572px style="position: absolute; top: 625px; left: -1395px;">
+<div class="description9">
+Like the steak here at Focal Foods, pork chops is another favorite among customers. Pork
+chop benefits are similar to steak benefits and they include protein, B vitamins and zinc.
+The signature pork chops at Focal Foods is called "Porky's." Above this description is a
+picture of that particular pork chop. At Focal Foods, pork chops cost $4.99 per pound.
+Remember this, vegetables go well with this meat. 
+</div>
+
+<div id="footer">
+<p>&copy;2016 FOCAL FOODS</p>
+<img src="Facebook_Logo.png" width=212px height=212px style="position: absolute; top: -55px; left: 825px;">
+<img src="Instagram_Logo.png" width=152px height=152px style="position: absolute; top: -25px; left: 925px;">
+<img src="Pinterest_Logo.png" width=152px height=152px style="position: absolute; top: -25px; left: 990px;">
+<img src="Twitter_Bird.png" width=112px height=112px style="position: absolute; top: -5px; left: 1080px;">
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

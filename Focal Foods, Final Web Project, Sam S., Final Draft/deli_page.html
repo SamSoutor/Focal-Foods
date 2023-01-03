@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var d = 0; d < dropdowns.length; d++) {
+      var openDropdown = dropdowns[d];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+$(document).ready(function(){
+    $("button").click(function(){
+        $(".description").fadeIn(1000);
+        $(".description2").fadeIn(1000);
+        $(".description3").fadeIn(1000);
+        $(".description4").fadeIn(1000);
+        $(".description5").fadeIn(1000);
+        $(".description6").fadeIn(1000);
+        $(".description7").fadeIn(1000);
+        $(".description8").fadeIn(1000);
+        $(".description9").fadeIn(1000);
+    });
+});
+</script>
+<style>
+
+@font-face {
+    font-family: 'Space Mono', monospace;
+    src: url("https://fonts.googleapis.com/css?family=Space+Mono");
+}
+
+body {
+	background-color: #FFD584;
+}
+
+#container {
+	background-color: white;
+	height: 3400px;
+	width: 1200px;
+	margin-left: -95px;
+	margin-top: -8px;
+}
+
+#wrapper {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 990px;
+}
+
+#header {
+	text-align: center;
+	border-bottom: 1px solid black;
+	margin-left: 0px;
+	background-color: #8b6523;
+	width: 100%;
+	height: 400px;
+}
+
+#header2 {
+text-align: left;
+font-size: 35px;
+font-family: 'Space Mono', monospace;
+color: black;
+z-index: 5;
+margin-left: 125px;
+margin-top: -2875px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    z-index: 25;
+    font-family: 'Space Mono', monospace;
+}
+
+li {
+    float: left;
+    font-size: 35px;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 25;
+    font-family: 'Space Mono', monospace;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+.description{
+display: none;    
+margin-left: -95px;
+margin-top: 305px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 30px;
+background-color: #fff2cc;
+}
+
+.description2{
+display: none;    
+margin-left: 10px;
+margin-top: 305px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 30px;
+background-color: #fff2cc;
+}
+
+.description3{
+display: none;     
+margin-left: 711px;
+margin-top: -454px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 30px;
+background-color: #fff2cc;
+}
+
+.description4{
+display: none;     
+margin-left: -95px;
+margin-top: 325px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 30px;
+background-color: #fff2cc;
+}
+
+.description5{
+display: none;   
+margin-left: 10px;
+margin-top: 325px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 30px;
+background-color: #fff2cc;
+}
+
+.description6{
+display: none;    
+margin-left: 711px;
+margin-top: -484px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 30px;
+background-color: #fff2cc;
+}
+
+.description7{
+display: none;    
+margin-left: -95px;
+margin-top: 380px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 30px;
+background-color: #fff2cc;
+}
+
+.description8{
+display: none;     
+margin-left: 10px;
+margin-top: 380px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 30px;
+background-color: #fff2cc;
+}
+
+.description9{
+display: none;     
+margin-left: 711px;
+margin-top: -454px;
+padding-left: 10px;
+padding-right: 10px;
+border: 2px solid yellow;
+height: auto;
+width: 370px;
+float: left;
+text-align: center;
+font-size: 20px;
+font-family: 'Space Mono', monospace;
+line-height: 30px;
+background-color: #fff2cc;
+}
+
+#footer {
+	position: absolute;
+	background-color: #8b6523;
+	color: white;
+	border-top: 1px solid black;
+	margin-left: -95px;
+	margin-right: -161px;
+	margin-top: 2617px;
+	padding-bottom: 20px;
+	padding-left: 15px;
+	font-size: 25px;
+	font-family: 'Space Mono', monospace;
+	float: left;
+	width: 119.7%;
+}
+
+
+</style>
+</head>
+<body>
+
+<div id="wrapper">
+
+<div id="container">
+
+<div id="header">
+<a href="index.html">
+<img src="Focal_Foods_Logo.jpg" style="position: relative; top: 30px;">
+</a>
+</div>
+
+<ul>
+  <li><a href="about_us_page.html"> &nbsp; About Us</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Departments</a>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="deli_page.html">Deli</a>
+      <a href="grocery_page.html">Grocery</a>
+      <a href="meat_seafood_page.html">Meat/Seafood</a>
+      <a href="produce_page.html">Produce</a>
+	<li><a href="stores_page.html">Stores</a></li>
+	<li><a href="recipes_page.html">Recipes</a></li>
+	<li><a href="wellness_page.html">Wellness</a></li>
+	<li><a href="news_page.html">News</a></li>
+    </div>
+  </li>
+</ul>
+
+<button style="position: absolute; top: 525px; left: 875px; font-size: 25px;">Click to fade in descriptions</button>
+
+<div id="header2">
+<h1>Departments: Deli</h1>
+</div>
+
+<img src="Turkey.png" width=548px height=336px style="position: absolute; top: 675px; left: -175px;">
+<div class="description">
+Bird meat is sacred and Focal Foods understands how important turkey is to society. Whether
+you use turkey meat for a sandwich or for Thanksgiving dinner, you'll always cherish the
+taste. Turkey meat is a source of protein, iron, zinc, potassium, phosphorus, vitamin B6
+and niacin. Turkey meat costs $8.99 per pound while a whole turkey costs $14.99. Don't put
+vegetables on turkey meat, you'll insult the birds!
+</div>
+
+<img src="Ham.png" width=400px height=400px style="position: absolute; top: 645px; left: 325px;">
+<div class="description2">
+Pig meat is one of our most popular treats here at Focal Foods. We have been serving our
+customers ham for many years and would like to say that it makes a great family dinner.
+Ham has a dose of protein and iron and is low in fat. You might have to watch your sodium
+levels while eating it though. Ham costs $7.99 per pound while a whole ham costs $11.99.
+Yes, you can put vegetables on ham. The pigs won't mind it.
+</div>
+
+<img src="Salami.png" width=300px height=300px style="position: absolute; top: 675px; left: 750px;">
+<div class="description3">
+Sliced thin salami is usually the best selling deli treat for kids. Great for sandwiches
+and pasta salads, this food is sure to please those who want to experiment with what they
+would like on their dish. Salami has protein, vitamins and minerals for your healthy habits.
+While a single slice of salami costs $0.99, a small package of them costs $2.99. If you
+like, you could use salami to create a Chuckwagon.
+</div>
+
+<img src="Cheddar_Cheese.png" width=1000px height=700px style="position: absolute; top: 1305px; left: -395px;">
+<div class="description4">
+Whether you like it melted or as it is, Cheddar Cheese is the best of the best here at
+Focal Foods. As one of our specialty diary products for deli eaters, this specific cheese
+will provide protein, calcium, vitamin D and potassium. A stick of cheddar costs $0.25, a
+brick of cheddar costs $0.99 and a whole pie of cheddar costs $2.99. We serve other cheeses,
+but always remember that cheddar is better.
+</div>
+
+<img src="Roast_Beef.png" width=644px height=408px style="position: absolute; top: 1470px; left: 195px;">
+<div class="description5">
+The roast beef here at Focal Foods is a prime attraction for deli eaters. Though not as
+popular as the turkey and ham, roast beef still pleases people of all ages. The benefits of
+roast beef include protein, carbohydrates, iron and vitamin B-12. Roast beef is also low
+in fat, but make sure to not eat the fatty bits when you cook it. If you thought dinner
+couldn't get any better, then look to Focal Foods for the prime roast beef in America.
+</div> 
+
+<img src="Potato_Salad.png" width=1948px height=1436px style="position: absolute; top: 925px; left: -65px;">
+<div class="description6">
+We here at Focal Foods know how salad means something for many people. One of our most
+popular salads is none other than potato salad. Throughout the years, we've had many people
+come in to tell us how much they love it and that they want more. Potato salad has the same
+benefits as regular potatoes. If you feel that other grocery stores aren't treating you with
+something great, then come enjoy our potato salad with a passion.
+</div>
+
+<img src="Coleslaw.png" width=4096px height=3072px style="position: absolute; top: 980px; left: -1975px;">
+<div class="description7">
+The potato salad isn't enough, Focal Foods also sells coleslaw for salad lovers. Coleslaw
+has been proven to fight cancer and the benefits of this are great in many ways. Coleslaw
+is rich in fiber, vitamin C, vitamin K, calcium, potassium, vitamin A, vitamin B6, manganese,
+folate and glutamine. For those who haven't tried coleslaw yet, your chance is now because
+it will surely help you down the road.
+</div>
+
+<img src="Pickles.png" width=1536px height=1024px style="position: absolute; top: 1996px; left: -275px;">
+<div class="description8">
+Well, you all knew that this was coming. While you may think that pickles are disgusting,
+appearances can be deceiving. Pickles taste fine and won't cause any trouble for you, despite
+what others tell you. Pickles contain protein, carbohydrates, dietary fiber, iron, magnesium,
+phosphorous and potassium. Still not convinced? That's ok, we understand if you haven't been
+completely sold. 
+</div>
+
+<img src="Macaroni_Salad.png" width=1948px height=1436px style="position: absolute; top: 1775px; left: -75px;">
+<div class="description9">
+For the most part, you can't have a deli department without having various salads. This
+salad has gotten many people to understand why a variety of salads is important for Focal
+Foods. With similar benefits as the other salads in our deli departments, the macaroni
+salad has become something of legend. Above this description is a picture of our signature
+salad, we here at Focal Foods call it "The Swamp of Benefit." 
+</div>
+
+<div id="footer">
+<p>&copy;2016 FOCAL FOODS</p>
+<img src="Facebook_Logo.png" width=212px height=212px style="position: absolute; top: -55px; left: 825px;">
+<img src="Instagram_Logo.png" width=152px height=152px style="position: absolute; top: -25px; left: 925px;">
+<img src="Pinterest_Logo.png" width=152px height=152px style="position: absolute; top: -25px; left: 990px;">
+<img src="Twitter_Bird.png" width=112px height=112px style="position: absolute; top: -5px; left: 1080px;">
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
